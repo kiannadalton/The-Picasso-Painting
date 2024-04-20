@@ -1,0 +1,289 @@
+body{
+    margin: 2.5% 2.5% 2.5% 2.5%;
+}
+
+/* The below code is for the background grid. */
+
+#background {
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    border: white;
+    color: transparent;
+    gap: .5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 65% 5%;
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box4 box4"
+    "box5 box5 box5"
+    ;
+}
+
+.box1 {
+    grid-area: box1;
+    display: grid;
+    background-color: teal;
+    border: white 3px solid;
+}
+
+.box2 {
+    grid-area: box2;
+    display: grid;
+    background-color: teal;
+    border: white 3px solid;
+
+}
+
+.box3 {
+    grid-area: box3;
+    display: grid;
+    background-color: teal;
+    border: white 3px solid;
+
+}
+
+.box4 {
+    grid-area: box4;
+    display: grid;
+    background-color: teal;
+    border: white 3px solid;
+
+}
+
+.box5 {
+    grid-area: box5;
+    display: grid;
+    background-color: rgb(172, 237, 93);
+    border: white 3px solid;
+
+}
+
+/* The below code is for the trees/mountains and circles */
+
+.arrow-up1 {
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 500px solid rgb(5, 157, 5);
+    position: absolute;
+    z-index: 2;
+    bottom: 9%;
+    right: 10%;
+}
+
+.arrow-up2 {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 400px solid yellowgreen;
+    position: absolute;
+    z-index: 3;
+    bottom: 9%;
+    right: 3%;
+}
+
+/* Below is the code for the circles */
+
+.circle1 {
+    background-color: lightpink;
+    width: 5rem;
+    border-radius: 50%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    flex: 1;
+    top: 15%;
+    left: 6%
+}
+
+.circle2 {
+    background-color: lightpink;
+    width: 3rem;
+    border-radius: 50%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    flex: 1;
+    top: 13%;
+    left: 17%
+}
+
+.circle3 {
+    background-color: yellow;
+    width: 7rem;
+    border-radius: 50%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    flex: 1;
+    top: 25%;
+    left: 15%
+}
+
+.circle4 {
+    background-color: yellow;
+    width: 2rem;
+    border-radius: 50%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    flex: 1;
+    top: 45%;
+    left: 12%
+}
+
+.circle5 {
+    background-color: lightpink;
+    width: 3rem;
+    border-radius: 50%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    flex: 1;
+    top: 40%;
+    left: 4%
+}
+
+.circle6 {
+    background-color: lightpink;
+    width: 3rem;
+    border-radius: 50%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    flex: 1;
+    top: 40%;
+    left: 26%
+}
+
+/* Below is the code for my ghosts */
+
+#ghost-babies{
+    font-size: 8rem;
+    position: absolute;
+    z-index: 4;
+    left: 2%;
+    bottom: 5%;
+}
+
+
+/* The below code is the footer to help provide space on the browser. */
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* The below code is for the order form. */
+
+input {
+    margin-bottom: 2.5%;
+    background-color: aliceblue;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Below is my media query */
+@media (min-width: 100px) and (max-width: 1680px){
+   #background{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 65% 5%;
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box4 box4"
+    "box5 box5 box5"
+    ;
+   }
+   #ghost-babies{
+    font-size: 5rem;
+
+}
+}
+
+@media (min-width: 481px) and (max-width: 1024px){
+   #background{ 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 65% 5%;
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box4 box4"
+    "box5 box5 box5"
+    ;
+   }
+   #ghost-babies{
+    font-size: 3rem;
+}
+
+}
+
+@media (min-width: 100px) and (max-width: 480px){
+    #background{
+    gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 65% 5%;
+    grid-template-areas: 
+    "box1"
+    "box4"
+    "box5";
+    }
+#ghost-babies{
+    font-size: 2rem;
+
+}
+
+.box2{
+    background-color: transparent;
+}
+
+.box3{
+    background-color: transparent;
+}
+
+.arrow-up2{
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 300px solid rgb(5, 157, 5);
+    position: absolute;
+    z-index: 2;
+    right: 18%;
+}
+
+.arrow-up1{
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 240px solid yellowgreen;
+    position: absolute;
+    z-index: 3;
+}
+
+}
+
+
+
+
